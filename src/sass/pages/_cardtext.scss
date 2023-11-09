@@ -1,0 +1,33 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    background: $white-color;
+    width: 100%;
+    height: 100%;
+    & .text-cards{
+        background: $black-color;
+    }
+    & .all-texts{
+        color: $black-color;
+    }
+    & .text-cards--link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & .text-btn{
+            padding: nth($padding, 1)*1.6;
+            background: $black-color;
+            color: $white-color;
+            cursor: pointer;
+        }
+    }
+    & .text-cards--link,
+    & .all-texts,
+    & .text-cards{
+        padding: nth($padding, 2);
+        text-align: center;
+    }
+}

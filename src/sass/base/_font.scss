@@ -1,0 +1,46 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+//collapse
+
+.section-collapse{
+    h2{
+        @include tablet {
+            font-size: 17px;
+        }
+        @include ordi {
+            font-size: 16.5px;
+        }
+    }
+}
+.boxes-childs{
+    .button {
+        font-size: 15px;
+    }
+}
+
+//cards -text
+
+.text-cards{
+    @include tablet {
+        font-size: 17px;
+    }
+    @include ordi {
+        font-size: 30px;
+    }
+}
+
+.all-texts{
+    @include tablet {
+        font-size: 13px;
+    }
+    @include ordi {
+        font-size: 16px;
+    }
+}
+
+.text-cards--link{
+    & .text-btn {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,19 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.foot-pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: nth($gap, 2);
+    width: 100%;
+    height: 50px;
+    padding: nth($padding, 4)*2 50px;
+    & .btn-link{
+        & .btn{
+            cursor: pointer;
+            background: red;
+            padding: nth($padding, 1);
+        }
+    }
+}

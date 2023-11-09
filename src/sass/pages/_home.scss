@@ -1,0 +1,109 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.container{
+    & .middle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & .all-boxes{
+            background: $boxes;
+            width: 90%;
+            display: flex;
+            @include mobile {
+                flex-direction: column;
+                gap: nth($gap, 4)*1.5;
+                padding: nth($padding, 4);
+            }
+            @include tablet{
+                flex-direction: row;
+                gap: 0;
+                padding: 0;
+            }
+            @include ordi{
+                padding: nth($padding, 4);
+            }
+            & .first-box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include mobile{
+                    width: 100%;
+                }
+                @include tablet{
+                    width: 25%;
+                }
+                @include ordi{
+                    width: 20%;
+                }
+                & .first-article {
+                    width: 100%;
+                }
+            }
+            & .second-box{
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-wrap: wrap;
+                @include mobile {
+                    width: 100%;
+                }
+                @include tablet {
+                    width: 50%;
+                }
+
+                @include ordi {
+                    width: 60%;
+                }
+                & .second-article{
+                    @include mobile {
+                        width: 100%;
+                    }
+                    @include tablet{
+                        width: 45%;
+                    }
+                    @include ordi{
+                        width: 30%;
+                    }
+                }
+            }
+            & .third-box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include mobile {
+                    width: 100%;
+                }
+                @include tablet {
+                    width: 25%;
+                }
+
+                @include ordi {
+                    width: 20%;
+                }
+                & .third-article {
+                    width: 100%;
+                }
+            }
+            & .first-box,
+            & .second-box,
+            & .third-box{
+                height: 100%;
+                @include mobile{
+                    gap: nth($gap, 4);
+                }
+                @include tablet{
+                    gap: nth($gap, 2)*1.3;
+                }
+                @include ordi{
+                    gap: nth($gap, 4);
+                }
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

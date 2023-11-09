@@ -1,0 +1,52 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    & .section-collapse {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $black-color;
+        padding: nth($padding, 2);
+
+        & h2 {
+            color: $white-color;
+            text-transform: capitalize;
+        }
+
+        & svg {
+            cursor: pointer;
+        }
+    }
+
+    .boxes-childs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: nth($gap, 1);
+        width: 100%;
+        padding: nth($padding, 3);
+        background: $white-color;
+
+        span{
+            color: $black-color;
+            text-align: center;
+        }
+        & .button{
+            color: $white-color;
+        }
+        & .link-button{
+            .button{
+                cursor: pointer;
+                padding: nth($padding, 1)*1.6;
+                background: $boxes;
+            }
+        }
+
+    }
+}
