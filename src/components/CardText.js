@@ -12,7 +12,7 @@ const CardText = ({ id, title, source, text }) => {
                 className='text-cards--link'
             >
                 <button type='button' className='text-btn'>
-                    Read More
+                    En savoir plus
                 </button>
             </Link>
         </div>

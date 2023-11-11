@@ -10,19 +10,16 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        background-color: $black-color;
+        background: $black-color;
         padding: nth($padding, 2);
-
         & h2 {
-            color: $white-color;
+            color: $gray-d;
             text-transform: capitalize;
         }
-
         & svg {
             cursor: pointer;
         }
     }
-
     .boxes-childs {
         display: flex;
         align-items: center;
@@ -31,20 +28,18 @@
         gap: nth($gap, 1);
         width: 100%;
         padding: nth($padding, 3);
-        background: $white-color;
-
+        background-color: $black-color;
         span{
-            color: $black-color;
-            text-align: center;
-        }
-        & .button{
-            color: $white-color;
+            color: $gray;
         }
         & .link-button{
+            width: 100%;
             .button{
                 cursor: pointer;
                 padding: nth($padding, 1)*1.6;
-                background: $boxes;
+                background: #005792;
+                width: 100%;
+                color: $gray;
             }
         }
 

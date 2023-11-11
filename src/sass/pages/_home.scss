@@ -42,7 +42,7 @@
             }
             & .second-box{
                 display: flex;
-                align-items: flex-start;
+                align-items: stretch;
                 justify-content: center;
                 flex-wrap: wrap;
                 @include mobile {
@@ -62,7 +62,7 @@
                     @include tablet{
                         width: 45%;
                     }
-                    @include ordi{
+                    @include largeOrdi{
                         width: 30%;
                     }
                 }

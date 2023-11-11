@@ -24,8 +24,8 @@ const Home = () => {
     const imagesHome = Object.values(data);
     const firstElement = imagesHome.slice(0, 2);
     const secondElement = imagesHome.slice(2, 8)
-    const thirdElement = imagesHome.slice(8, 11)
-    const lastElement = imagesHome.slice(-2)
+    const thirdElement = imagesHome.slice(8, 14)
+    const lastElement = imagesHome.slice(-3)
 
     return (
         <div className='container'>
