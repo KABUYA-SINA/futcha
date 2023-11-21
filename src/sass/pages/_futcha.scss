@@ -1,0 +1,62 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.fut-main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    @include mobile{
+        flex-direction: column;
+        padding: nth($padding, 2);
+        gap: nth($gap, 3);
+    }
+    @include tablet{
+        flex-direction: row;
+        padding: nth($padding, 4)*2 nth($padding, 4)*3.5;
+    }
+    & .fit--img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mobile{
+            width: 100%;
+        }
+        @include tablet{
+            width: 45%;
+        }
+        img{
+            object-fit: contain;
+            height: 100%;
+            @include mobile{
+                width: 90%;
+            }
+            @include tablet{
+                width: 50%;
+            }
+        }
+    }
+    & .fit--text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: nth($padding, 2);
+        gap: nth($gap, 3);
+        @include mobile{
+            width: 100%;
+        }
+        @include tablet{
+            width: 55%;
+        }
+        & .boxes>section{
+            @include tablet{
+                width: 35%;
+            }
+        }
+        & .text-fut>ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: nth($gap, 3);
+        }
+    }
+}
