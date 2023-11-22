@@ -3,16 +3,23 @@
 
 .fut-main{
     display: flex;
-    height: 100%;
-    width: 100%;
-    @include mobile{
-        flex-direction: column;
-        padding: nth($padding, 2);
-        gap: nth($gap, 3);
-    }
-    @include tablet{
-        flex-direction: row;
-        padding: nth($padding, 4)*2 nth($padding, 4)*3.5;
+    justify-content: center;
+    align-items: center;
+    & .backg-main{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        background: $boxes;
+        @include mobile{
+            width: 100%;
+            flex-direction: column;
+            padding: nth($padding, 2);
+            gap: nth($gap, 3);
+        }
+        @include tablet{
+            width: 90%;
+            flex-direction: row;
+        }
     }
     & .fit--img{
         display: flex;
@@ -25,32 +32,27 @@
             width: 45%;
         }
         img{
-            object-fit: contain;
-            height: 100%;
+            object-fit: cover;
+            height: 90%;
             @include mobile{
                 width: 90%;
-            }
-            @include tablet{
-                width: 50%;
             }
         }
     }
     & .fit--text{
         display: flex;
+        align-items: center;
         flex-direction: column;
         justify-content: center;
-        padding: nth($padding, 2);
-        gap: nth($gap, 3);
+        gap: nth($gap, 4);
         @include mobile{
             width: 100%;
         }
         @include tablet{
             width: 55%;
         }
-        & .boxes>section{
-            @include tablet{
-                width: 35%;
-            }
+        h1, p, & .text-fut{
+            width: 90%;
         }
         & .text-fut>ul{
             display: flex;
