@@ -16,6 +16,7 @@
 .boxes-childs{
     .button {
         font-size: 15px;
+        font-weight: 600;
     }
 }
 
@@ -31,6 +32,7 @@
 }
 
 .all-texts{
+    word-break: break-word;
     @include tablet {
         font-size: 13px;
     }
@@ -42,6 +44,7 @@
 .text-cards--link{
     & .text-btn {
         font-size: 15px;
+        font-weight: 600;
     }
 }
 

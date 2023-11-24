@@ -16,7 +16,7 @@
             padding: nth($padding, 2);
             gap: nth($gap, 3);
         }
-        @include tablet{
+        @include ordi{
             width: 90%;
             flex-direction: row;
         }
@@ -28,7 +28,7 @@
         @include mobile{
             width: 100%;
         }
-        @include tablet{
+        @include ordi{
             width: 45%;
         }
         img{
@@ -48,7 +48,7 @@
         @include mobile{
             width: 100%;
         }
-        @include tablet{
+        @include ordi{
             width: 55%;
         }
         h1, p, & .text-fut{
