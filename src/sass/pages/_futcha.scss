@@ -44,7 +44,7 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        gap: nth($gap, 4);
+        gap: nth($gap, 4)*2;
         @include mobile{
             width: 100%;
         }
@@ -56,9 +56,69 @@
         }
         & .text-fut>ul{
             display: flex;
-            flex-direction: column;
             justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
             gap: nth($gap, 3);
+            @include tablet{
+                flex-direction: row;
+            }
+            li{
+                display: flex;
+                position: relative;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                @include mobile{
+                    height: 185px;
+                    width: 47%;
+                }
+                @include tablet{
+                    width: 30%;
+                }
+                @include ordi{
+                    width: 45%;
+                }
+                @include largeOrdi{
+                    width: 30%;
+                }
+                & .heading {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 1;
+                    p{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                & .heading--text {
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: nth($padding, 2);
+                }
+            }
+            li:hover,
+            li:focus,
+            li:active{
+                box-shadow: rgb(250 248 248 / 20%) 0px 0px 10px 5px;
+                & .heading{
+                    opacity: 0.1;
+                    transition: .8s;
+                }
+                & .heading--text{
+                    color: $white-color;
+                    opacity: 1;
+                    transition: 1s;
+                }
+            }
         }
     }
 }

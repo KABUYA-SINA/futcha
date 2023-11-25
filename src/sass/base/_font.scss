@@ -51,7 +51,15 @@
 //futcha
 
 .text-fut>ul {
-    & .heading {
+    & .heading p{
         font-weight: 600;
+    }
+    & .heading--text{
+        @include mobile{
+            font-size: 10px;
+        }
+        @include tablet{
+            font-size: 12px;
+        }
     }
 }

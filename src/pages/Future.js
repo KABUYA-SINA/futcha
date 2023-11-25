@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import images from '../assets/pages/futcha.webp';
-import Collapse from '../components/Collapse';
 import '../sass/base/_base.scss';
 import '../sass/base/_font.scss';
 import '../sass/layout/_container.scss';
@@ -31,32 +30,88 @@ const Future = () => {
                         <div className='text-fut'>
                             <ul>
                                 <li>
-                                    <span className="heading">1. Technologie: </span>
-                                    <span> Les avancées rapides dans les domaines tels que l'intelligence artificielle, l'informatique quantique, la biotechnologie et l'automatisation continueront probablement à façonner notre façon de vivre et de travailler.</span>
+                                    <span className="heading">
+                                        <img width="100" height="100"
+                                            src="https://img.icons8.com/external-parzival-1997-flat-parzival-1997/100/external-technology-digital-globalization-parzival-1997-flat-parzival-1997-1.png"
+                                            alt="external-technology-digital-globalization-parzival-1997-flat-parzival-1997-1"
+                                        />
+                                        <p>Technologie</p>
+                                    </span>
+                                    <span className='heading--text'>
+                                        Les avancées rapides dans les domaines tels que l'intelligence artificielle, l'informatique quantique, la biotechnologie et l'automatisation continueront probablement à façonner notre façon de vivre et de travailler.
+                                    </span>
                                 </li>
                                 <li>
-                                    <span className="heading">2. Durabilité: </span>
-                                    <span> La prise de conscience croissante des enjeux environnementaux pourrait conduire à des changements significatifs dans la façon dont nous produisons et consommons des biens et des services, avec un accent accru sur la durabilité.</span>
+                                    <span className="heading">
+                                        <img width="100" height="100"
+                                            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/external-sustainability-circular-economy-flaticons-lineal-color-flat-icons.png"
+                                            alt="external-sustainability-circular-economy-flaticons-lineal-color-flat-icons"
+                                        />
+                                        <p>Durabilité</p>
+                                    </span>
+                                    <span className='heading--text'>
+                                        La prise de conscience croissante des enjeux environnementaux pourrait conduire à des changements significatifs dans la façon dont nous produisons et consommons des biens et des services, avec un accent accru sur la durabilité.
+                                    </span>
                                 </li>
                                 <li>
-                                    <span className="heading">3. Santé: </span>
-                                    <span> Les progrès dans la médecine, les soins de santé personnalisés et la recherche sur les maladies pourraient améliorer la qualité de vie et prolonger l'espérance de vie.</span>
+                                    <span className="heading">
+                                        <img width="100" height="100"
+                                            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/external-health-hygiene-flaticons-lineal-color-flat-icons-5.png"
+                                            alt="external-health-hygiene-flaticons-lineal-color-flat-icons-5"
+                                        />
+                                        <p>Santé</p>
+                                    </span>
+                                    <span className='heading--text'>
+                                        Les progrès dans la médecine, les soins de santé personnalisés et la recherche sur les maladies pourraient améliorer la qualité de vie et prolonger l'espérance de vie.
+                                    </span>
                                 </li>
                                 <li>
-                                    <span className="heading">4. Économie: </span>
-                                    <span> Les modèles économiques peuvent évoluer en réponse aux changements technologiques, aux perturbations industrielles et aux défis mondiaux, tels que les pandémies.</span>
+                                    <span className="heading">
+                                        <img width="100" height="100"
+                                            src="https://img.icons8.com/cotton/100/bank-building--v2.png"
+                                            alt="bank-building--v2"
+                                        />
+                                        <p>Économie</p>
+                                    </span>
+                                    <span className='heading--text'>
+                                        Les modèles économiques peuvent évoluer en réponse aux changements technologiques, aux perturbations industrielles et aux défis mondiaux, tels que les pandémies.
+                                    </span>
                                 </li>
                                 <li>
-                                    <span className="heading">5. Climat: </span>
-                                    <span> Les efforts pour atténuer le changement climatique et s'adapter à ses effets pourraient devenir des priorités majeures à l'échelle mondiale.</span>
+                                    <span className="heading">
+                                        <img width="100" height="100"
+                                            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/external-climate-plants-flaticons-lineal-color-flat-icons-3.png"
+                                            alt="external-climate-plants-flaticons-lineal-color-flat-icons-3"
+                                        />
+                                        <p>Climat</p>
+                                    </span>
+                                    <span className='heading--text'>
+                                        Les efforts pour atténuer le changement climatique et s'adapter à ses effets pourraient devenir des priorités majeures à l'échelle mondiale.
+                                    </span>
                                 </li>
                                 <li>
-                                    <span className="heading">6. Société: </span>
-                                    <span> Les questions liées à l'équité, à la diversité et à l'inclusion pourraient devenir de plus en plus importantes, influençant les politiques, les normes sociales et les relations interpersonnelles.</span>
+                                    <span className="heading">
+                                        <img width="100" height="100"
+                                            src="https://img.icons8.com/plasticine/100/business-buildings.png"
+                                            alt="business-buildings"
+                                        />
+                                        <p>Société</p>
+                                    </span>
+                                    <span className='heading--text'>
+                                        Les questions liées à l'équité, à la diversité et à l'inclusion pourraient devenir de plus en plus importantes, influençant les politiques, les normes sociales et les relations interpersonnelles.
+                                    </span>
                                 </li>
                                 <li>
-                                    <span className="heading">7. Géopolitique: </span>
-                                    <span> Les relations entre les nations, les alliances et les conflits pourraient évoluer en réponse à des facteurs tels que les changements économiques, les évolutions technologiques et les défis mondiaux.</span>
+                                    <span className="heading">
+                                        <img width="100" height="100"
+                                            src="https://img.icons8.com/officel/100/geography.png"
+                                            alt="geography"
+                                        />
+                                        <p>Géopolitique</p>
+                                    </span>
+                                    <span className='heading--text'>
+                                        Les relations entre les nations, les alliances et les conflits pourraient évoluer en réponse à des facteurs tels que les changements économiques, les évolutions technologiques et les défis mondiaux.
+                                    </span>
                                 </li>
                             </ul>
                         </div>
