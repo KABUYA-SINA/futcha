@@ -11,32 +11,29 @@
         height: 100%;
         background: $boxes;
         @include mobile{
-            width: 100%;
+            width: 90%;
             flex-direction: column;
-            padding: nth($padding, 2);
-            gap: nth($gap, 3);
+            gap: nth($gap, 4);
         }
         @include ordi{
             width: 90%;
             flex-direction: row;
+            gap: 0;
         }
     }
     & .fit--img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background: url('../../assets/pages/futcha.webp') no-repeat center;
+        background-size: cover;
         @include mobile{
             width: 100%;
+            height: 520px;
         }
         @include ordi{
             width: 45%;
+            height: 1265px;
         }
-        img{
-            object-fit: cover;
-            height: 90%;
-            @include mobile{
-                width: 90%;
-            }
+        @include largeOrdi{
+            height: 992px;
         }
     }
     & .fit--text{
@@ -44,7 +41,7 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        gap: nth($gap, 4)*2;
+        gap: nth($gap, 4)*1.5;
         @include mobile{
             width: 100%;
         }
@@ -111,12 +108,12 @@
                 box-shadow: rgb(250 248 248 / 20%) 0px 0px 10px 5px;
                 & .heading{
                     opacity: 0.1;
-                    transition: .8s;
+                    transition: .5s;
                 }
                 & .heading--text{
                     color: $white-color;
                     opacity: 1;
-                    transition: 1s;
+                    transition: .5s;
                 }
             }
         }

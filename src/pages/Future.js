@@ -1,24 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import images from '../assets/pages/futcha.webp';
 import '../sass/base/_base.scss';
 import '../sass/base/_font.scss';
 import '../sass/layout/_container.scss';
 import '../sass/pages/_futcha.scss';
 
 const Future = () => {
-    const [img, setImg] = useState([])
-    useEffect(() => (
-        setImg(images)
-    ), [])
     return (
         <div className='container'>
             <Header />
             <main className='fut-main'>
                 <div className="backg-main">
                     <div className="fit--img">
-                        <img src={img} alt='future' />
                     </div>
                     <div className="fit--text">
                         <h1>Future</h1>
