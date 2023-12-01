@@ -64,7 +64,8 @@
             li{
                 display: flex;
                 position: relative;
-                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border-radius: 10px;
                 @include mobile{
                     height: 185px;
                     width: 47%;
@@ -105,7 +106,7 @@
             li:hover,
             li:focus,
             li:active{
-                box-shadow: rgb(250 248 248 / 20%) 0px 0px 10px 5px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 & .heading{
                     opacity: 0.1;
                     transition: .5s;
