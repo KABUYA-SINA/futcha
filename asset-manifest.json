@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/futcha/static/css/main.1f3861dd.css",
-    "main.js": "/futcha/static/js/main.4d1a9b62.js",
+    "main.css": "/futcha/static/css/main.e42d6aa6.css",
+    "main.js": "/futcha/static/js/main.1876e4cf.js",
     "static/media/about.webp": "/futcha/static/media/about.4a8e63142301b87102f2.webp",
     "static/media/contact.webp": "/futcha/static/media/contact.559bbdceed4250354f99.webp",
     "static/media/futcha.webp": "/futcha/static/media/futcha.851caa6d6908871b47f8.webp",
@@ -15,11 +15,11 @@
     "static/media/futcha-six.webp": "/futcha/static/media/futcha-six.f028bdca461ea91f3c55.webp",
     "static/media/futcha-four.webp": "/futcha/static/media/futcha-four.03ea2cbb4f3d0494bf70.webp",
     "index.html": "/futcha/index.html",
-    "main.1f3861dd.css.map": "/futcha/static/css/main.1f3861dd.css.map",
-    "main.4d1a9b62.js.map": "/futcha/static/js/main.4d1a9b62.js.map"
+    "main.e42d6aa6.css.map": "/futcha/static/css/main.e42d6aa6.css.map",
+    "main.1876e4cf.js.map": "/futcha/static/js/main.1876e4cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f3861dd.css",
-    "static/js/main.4d1a9b62.js"
+    "static/css/main.e42d6aa6.css",
+    "static/js/main.1876e4cf.js"
   ]
 }
