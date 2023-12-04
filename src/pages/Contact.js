@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FormInput from '../components/Form/FormInput';
 import TextArea from '../components/Form/TextArea';
+import { motion } from "framer-motion";
 import '../sass/base/_base.scss';
 import '../sass/base/_font.scss';
 import '../sass/layout/_container.scss';
@@ -73,7 +74,12 @@ const Contact = () => {
     }
 
     return (
-        <div className='container'>
+        <motion.div
+            className='container'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: .4 } }}
+            exit={{ opacity: 0 }}
+        >
             <Header />
             <main className='main-contact'>
                 <div className="contact-menu">
@@ -111,7 +117,7 @@ const Contact = () => {
                 </div>
             </main>
             <Footer />
-        </div>
+        </motion.div>
     )
 }
 

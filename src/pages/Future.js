@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { motion } from "framer-motion";
 import '../sass/base/_base.scss';
 import '../sass/base/_font.scss';
 import '../sass/layout/_container.scss';
@@ -8,7 +9,12 @@ import '../sass/pages/_futcha.scss';
 
 const Future = () => {
     return (
-        <div className='container'>
+        <motion.div
+            className='container'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: .4 } }}
+            exit={{ opacity: 0 }}
+        >
             <Header />
             <main className='fut-main'>
                 <div className="backg-main">
@@ -117,7 +123,7 @@ const Future = () => {
                 </div>
             </main>
             <Footer />
-        </div>
+        </motion.div>
     )
 }
 export default Future;

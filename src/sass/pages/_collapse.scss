@@ -13,7 +13,6 @@
         background: $black-color;
         padding: nth($padding, 2);
         & h2 {
-            color: $gray-d;
             text-transform: capitalize;
         }
         & svg {
@@ -29,17 +28,14 @@
         width: 100%;
         padding: nth($padding, 3);
         background-color: $black-color;
-        span{
-            color: $gray;
-        }
         & .link-button{
             width: 100%;
             .button{
                 cursor: pointer;
                 padding: nth($padding, 1)*1.6;
-                background: #880808;
                 width: 100%;
-                color: $gray;
+                background: $white-color;
+                color: $black-color;
             }
         }
 

@@ -12,8 +12,9 @@
     & .btn-link{
         & .btn{
             cursor: pointer;
-            background: #880808;
+            background: $white-color;
             padding: nth($padding, 1);
+            color: $black-color;
         }
     }
 }

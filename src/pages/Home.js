@@ -7,6 +7,7 @@ import Loading from '../components/Loader';
 import { ErrorBoundary } from 'react-error-boundary';
 import Cards from '../components/Cards';
 import CardText from '../components/CardText';
+import { motion } from "framer-motion";
 import '../sass/base/_base.scss';
 import '../sass/base/_font.scss';
 import '../sass/layout/_container.scss';
@@ -28,7 +29,12 @@ const Home = () => {
     const lastElement = imagesHome.slice(-3)
 
     return (
-        <div className='container'>
+        <motion.div
+            className='container'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: .5 } }}
+            exit={{ opacity: 0 }}
+        >
             <Header />
             <main className='middle'>
                 <ErrorBoundary FallbackComponent={ErrorData} onReset={() => { }}>
@@ -75,7 +81,7 @@ const Home = () => {
                 </ErrorBoundary>
             </main>
             <Footer />
-        </div>
+        </motion.div>
     )
 }
 export default Home;

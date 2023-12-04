@@ -16,6 +16,8 @@ const Roads = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/future" element={<Future />} />
                 <Route path='*' element={<Error />} />
+
+                <Route path="/futcha" element={<Home />} />
             </Routes>
         </AnimatePresence>
     )
