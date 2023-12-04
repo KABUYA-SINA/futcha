@@ -18,6 +18,10 @@ const Roads = () => {
                 <Route path='*' element={<Error />} />
 
                 <Route path="/futcha" element={<Home />} />
+                <Route path='/futcha/about' element={<About />} />
+                <Route path="/futcha/contact" element={<Contact />} />
+                <Route path="/futcha/future" element={<Future />} />
+                <Route path='/futcha/*' element={<Error />} />
             </Routes>
         </AnimatePresence>
     )
