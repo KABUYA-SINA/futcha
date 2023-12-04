@@ -79,8 +79,6 @@
                 align-items: center;
                 margin-bottom: nth($margin, 4)*1.75;
                 & p {
-                    text-transform: uppercase;
-                    font-weight: 700;
                     color: $contact;
                 }
             }

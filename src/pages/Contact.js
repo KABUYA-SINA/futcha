@@ -106,11 +106,11 @@ const Contact = () => {
                             </iframe>
                         </div>
                         <div className="adress">
+                            <p>Ouvert de 6h à 21h</p>
+                            <p>Du lundi au vendredi</p>
+                            <p>101 Rue Félix Brun</p>
+                            <p>69000 Lyon</p>
                             <p>help-contact@futcha.com</p>
-                            <p>101 Rue Félix Brun, 69000 Lyon</p>
-                            <p>Ouvert de 6h à 21h, du lundi
-                                au vendredi
-                            </p>
                             <p>SIRET: 123 456 789 12345</p>
                         </div>
                     </div>
