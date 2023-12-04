@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/futcha/static/css/main.1ea2e2e7.css",
+    "main.js": "/futcha/static/js/main.ff0598c4.js",
+    "static/media/about.webp": "/futcha/static/media/about.4a8e63142301b87102f2.webp",
+    "static/media/contact.webp": "/futcha/static/media/contact.559bbdceed4250354f99.webp",
+    "static/media/futcha.webp": "/futcha/static/media/futcha.851caa6d6908871b47f8.webp",
+    "static/media/futcha-five.webp": "/futcha/static/media/futcha-five.9d64b2c3ce3aba254bb6.webp",
+    "static/media/futcha-two.webp": "/futcha/static/media/futcha-two.229e30c7dec8196e7161.webp",
+    "static/media/futcha-one.webp": "/futcha/static/media/futcha-one.8f1076162b6dd2ce6a44.webp",
+    "static/media/futcha-three.webp": "/futcha/static/media/futcha-three.56bb9c766841c3bb67a1.webp",
+    "static/media/futcha-nine.webp": "/futcha/static/media/futcha-nine.0c5b7bbaa43bf5a6791d.webp",
+    "static/media/futcha-eight.webp": "/futcha/static/media/futcha-eight.1a8272afb0e50db77100.webp",
+    "static/media/futcha-seven.webp": "/futcha/static/media/futcha-seven.fba710f391f934c64dbc.webp",
+    "static/media/futcha-six.webp": "/futcha/static/media/futcha-six.f028bdca461ea91f3c55.webp",
+    "static/media/futcha-four.webp": "/futcha/static/media/futcha-four.03ea2cbb4f3d0494bf70.webp",
+    "index.html": "/futcha/index.html",
+    "main.1ea2e2e7.css.map": "/futcha/static/css/main.1ea2e2e7.css.map",
+    "main.ff0598c4.js.map": "/futcha/static/js/main.ff0598c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ea2e2e7.css",
+    "static/js/main.ff0598c4.js"
+  ]
+}
