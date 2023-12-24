@@ -8,9 +8,7 @@
     width: 100%;
     height: 110px;
     transition: .6s;
-    @include mobile {
-        padding: nth($padding, 2) 25px;
-    }
+    padding: nth($padding, 2) 25px;
     @include tablet {
         padding: nth($padding, 4)*2 70px;
     }
@@ -28,9 +26,7 @@
                 a {
                     padding: nth($padding, 3) 0;
                     transition: .6s;
-                    @include mobile {
-                        margin: 0 nth($margin, 1);
-                    }
+                    margin: 0 nth($margin, 1);
                     @include tablet {
                         margin: 0 nth($margin, 3);
                     }

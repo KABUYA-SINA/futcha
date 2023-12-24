@@ -8,14 +8,13 @@
         justify-content: center;
         & .all-boxes{
             background: $boxes;
-            width: 90%;
+            width: 100%;
             display: flex;
-            @include mobile {
-                flex-direction: column;
-                gap: nth($gap, 4)*1.5;
-                padding: nth($padding, 4);
-            }
+            flex-direction: column;
+            gap: nth($gap, 4)*1.5;
+            padding: nth($padding, 4);
             @include tablet{
+                width: 90%;
                 flex-direction: row;
                 gap: 0;
                 padding: 0;
@@ -27,9 +26,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                @include mobile{
-                    width: 100%;
-                }
+                width: 100%;
                 @include tablet{
                     width: 25%;
                 }
@@ -45,9 +42,7 @@
                 align-items: stretch;
                 justify-content: center;
                 flex-wrap: wrap;
-                @include mobile {
-                    width: 100%;
-                }
+                width: 100%;
                 @include tablet {
                     width: 50%;
                 }
@@ -56,9 +51,7 @@
                     width: 60%;
                 }
                 & .second-article{
-                    @include mobile {
-                        width: 100%;
-                    }
+                    width: 100%;
                     @include tablet{
                         width: 45%;
                     }
@@ -71,9 +64,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                @include mobile {
-                    width: 100%;
-                }
+                width: 100%;
                 @include tablet {
                     width: 25%;
                 }
@@ -89,9 +80,7 @@
             & .second-box,
             & .third-box{
                 height: 100%;
-                @include mobile{
-                    gap: nth($gap, 4);
-                }
+                gap: nth($gap, 4);
                 @include tablet{
                     gap: nth($gap, 2)*1.3;
                 }
